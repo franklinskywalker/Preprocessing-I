@@ -61,12 +61,19 @@ html, body {
 @background-color-one: #e0dfdc;
 
 .container{
+	display: flex;
+	flex-direction: column;
 	background-color: rgba(255, 255, 255, 0.966);
 }
 
 .navigation{
+	
 	background-color: white;
    nav{
+	@media( max-width: 700px){
+		flex-direction: column;
+		align-items: center;
+	}
 	   background-color: white;
 	   display: flex;
 	   justify-content: flex-end;
@@ -83,28 +90,47 @@ html, body {
 }
 
 .section-one{
+	border: black dotted 1px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	background-color: @background-color-one;
 	margin: 2% 3% 2%;
 	h1{
 		margin-left: 2%;
 		font-size: 1.5rem;
 	}
+	h2{
+		margin-left: 2%;
+		margin-top: 1%;
+		font-size: .9rem;
+	}
 	
 
 	img{
-		max-height: 15vh;
-		max-width: 15vh;
+		height: 25vh;
+		width: 25vh;
 		margin: 4% 2% 1%;
 	}
 	.section-one-leg{
-	
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		border-top: 1px solid grey;
 		margin: 3%;
+		.button {
+			text-decoration: none;
+			color: white;
+			 background-color: #6e6d69;
+			 margin: 2%;
+			 padding: 1%;
+		}
+
+		h3{
+
+		}
+
+
 
 	}
 
